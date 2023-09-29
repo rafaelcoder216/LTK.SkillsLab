@@ -31,3 +31,5 @@ if (isLocal) {
   //for lambda export
   module.exports = app;
 }
+
+module.exports = app;

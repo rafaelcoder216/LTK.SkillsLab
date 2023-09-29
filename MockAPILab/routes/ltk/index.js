@@ -45,7 +45,7 @@ router.patch("/:loanId/borrowers/:pairId", (req, res) => {
       res.status(404).json({ error: "Borrow not found" });
     } else {
       Object.assign(borrower, req.body);
-      res.json(borrower);
+      res.status(200).json(borrower);
     }
   }
 });
